@@ -4373,7 +4373,8 @@
           "example": "active",
           "enum": [
             "frozen",
-            "active"
+            "active",
+            "inactive"
           ]
         },
         "taker_fee": {
@@ -4481,7 +4482,8 @@
           "example": "active",
           "enum": [
             "frozen",
-            "active"
+            "active",
+            "inactive"
           ]
         },
         "taker_fee": {

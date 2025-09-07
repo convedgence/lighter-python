@@ -43,8 +43,8 @@ class OrderBook(BaseModel):
     @field_validator('status')
     def status_validate_enum(cls, value):
         """Validates the enum"""
-        if value not in set(['frozen', 'active']):
-            raise ValueError("must be one of enum values ('frozen', 'active')")
+        if value not in set(['frozen', 'active', 'inactive']):
+            raise ValueError("must be one of enum values ('frozen', 'active', 'inactive')")
         return value
 
     model_config = ConfigDict(
